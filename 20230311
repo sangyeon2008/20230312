@@ -1,0 +1,102 @@
+#
+# import random
+# def make_apart(층,호):
+#     apart = []
+#     for i in range(1, 층+1):
+#         A=[]
+#         for j in range(1, 호+1):
+#             A.append(f"{i}층,{i*100+j}호")
+#             apart.append(A)
+#     return apart
+# def make_info(층int,호:int):
+#     info = []
+#     for i in range(층):
+#         temp = []
+#         for j in range(호):
+#             temp.append(str(random.randint(0,5))+'명')
+#         info.append(temp)
+#     return info
+#
+# def make_apart_info(층,호,info):    # 층: 3  호 : 2
+#     apartment=[]
+#     for i in range(1, 층+1): # i = 1~ 3
+#         B = {}
+#         for j in range(1, 호+1): # j = 1 ~ 2
+#             B[str(i*100+j)+'호'] = info[i-1][j-1]
+#         apartment.append(B)
+#     return apartment
+#
+# def make_new_info(층, 호, cnt):
+#     new_info = []
+#     while len(new_info)<cnt:
+#         new_ho = str(random.randint(1,층)* 100 +random.randint(1,호))+"호"
+#         if new_ho not in new_info:
+#             new_info.append(new_ho)
+#
+#     for i in range(len(new_info)):
+#         new_info[i] = [new_info[i],str(random.randint(0,5))+'명']
+#     return new_info
+#
+#
+# def update_info(apart_info,new_info):
+#     for f, i in new_info:
+#         floor = int(f[:-3])
+#         apart_info[floor-1][f] = i
+#     return apart_info
+#
+#
+#
+#
+# 층 = int(input())
+# 호 = int(input())
+#
+# apartment = make_apart(층,호)
+# # apartment = [['101호','102호'],
+# #             ['201호','202호'],
+# #             ['301호','302호']]
+#
+# info = make_info(층,호)
+#
+# apartment_info = make_apart_info(apartment,info)
+# # {}]
+# new_info = make_new_info(층,호,4)
+# #아파트 만들기
+#
+# apartment_info = update_info(apartment_info,new_info)
+
+
+
+
+# 160586 대충만든 자판
+def solution(keymap, targets):
+    cnt=0
+    dictionary={}
+    for i in range(5):
+        if keymap[i]=="A":
+            dictionary[i]="A"
+            break
+        elif keymap[i]=="B":
+            dictionary[i]="B"
+            break
+        elif keymap[i]=="C":
+            dictionary[i]="C"
+            break
+        elif keymap[i]=="D":
+            dictionary[i]="D"
+            break
+        elif keymap[i]=="E":
+            dictionary[i]="E"
+            break
+        elif keymap[i] == "E":
+            dictionary[i] = "E"
+            break
+    return dict
+    # dict={A: ,B: ,C: ,D: ,E: ,F: }
+
+print(["ABACD", "BCEFD"],["ABCD","AABB"])
+
+
+#힌트 string = "ABACD"
+# dictionary = {}
+# for i in range(len(string)):
+#     #키값이 잇으면 벨류값을 
